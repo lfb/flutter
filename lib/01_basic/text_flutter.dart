@@ -29,8 +29,8 @@ class TextDemo extends StatelessWidget {
               fontWeight: FontWeight.w800,
               fontStyle: FontStyle.italic,
               decoration: TextDecoration.underline,
-              fontFamily: 'Otomanopee_One',
-              decorationColor: Colors.blue),
+              fontFamily: 'Roboto',
+              decorationColor: Color.fromARGB(0xFF, 0x00, 0xFF, 0x00)),
           textAlign: TextAlign.left,
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
@@ -39,11 +39,11 @@ class TextDemo extends StatelessWidget {
         RichText(
           text: TextSpan(
               text: "Hello",
-              style: TextStyle(fontSize: 40, color: Colors.black),
+              style: TextStyle(fontSize: 40, color: Colors.red),
               children: [
                 TextSpan(
                   text: 'Flutter',
-                  style: TextStyle(fontSize: 40, color: Colors.blue),
+                  style: TextStyle(fontSize: 40, color: Colors.blue[200]),
                 )
               ]),
         ),
